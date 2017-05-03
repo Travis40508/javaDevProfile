@@ -2,6 +2,8 @@ package com.company.About;
 
 import com.company.About.Education.Education;
 import com.company.About.Experience.Experience;
+import com.company.About.Facts.Facts;
+import com.company.About.Skills.Skills;
 
 import java.util.Scanner;
 
@@ -67,11 +69,11 @@ public class About implements AboutView {
 
     @Override
     public void launchSkills() {
-
+        new Skills().init();
     }
 
     @Override
     public void launchFacts() {
-
+        new Facts().init();
     }
 }
