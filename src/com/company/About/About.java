@@ -1,6 +1,7 @@
 package com.company.About;
 
 import com.company.About.Education.Education;
+import com.company.About.Experience.Experience;
 
 import java.util.Scanner;
 
@@ -29,11 +30,19 @@ public class About implements AboutView {
         System.out.println("1.Education \n" +
                            "2.Experience \n" +
                            "3.Skills \n" +
-                           "4.Facts");
+                           "4.Facts\n");
         switch (scanner.next()) {
             case "1":
                 presenter.educationSelected();
                 break;
+            case "2":
+                presenter.experienceSelected();
+                break;
+            case "3":
+                presenter.skillsSelected();
+                break;
+            case "4":
+                presenter.factsSelected();
             default:
                 presenter.invalidStatementSelected();
                 break;
@@ -49,5 +58,20 @@ public class About implements AboutView {
     public void startOver() {
         System.out.println("Invalid response! Please try again!");
         greetUser();
+    }
+
+    @Override
+    public void launchExperience() {
+        new Experience().init();
+    }
+
+    @Override
+    public void launchSkills() {
+
+    }
+
+    @Override
+    public void launchFacts() {
+
     }
 }

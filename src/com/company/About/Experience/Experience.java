@@ -1,4 +1,4 @@
-package com.company.About.Education;
+package com.company.About.Experience;
 
 import com.company.About.About;
 import com.company.Main;
@@ -8,27 +8,36 @@ import java.util.Scanner;
 /**
  * Created by rodneytressler on 5/2/17.
  */
-public class Education implements EducationView{
-    private EducationPresenter presenter;
+public class Experience implements ExperienceView {
+
+    private ExperiencePresenter presenter;
     private Scanner scanner;
 
-    public Education() {
+    public Experience() {
+
 
     }
 
     public void init() {
-        presenter = new EducationPresenter();
+        presenter = new ExperiencePresenter();
         scanner = new Scanner(System.in);
         presenter.setView(this);
         presenter.classInstantiated();
     }
 
     @Override
-    public void greetUser() {
-        System.out.println("B.A. - Philosophy\n" +
-                "Class of 2012\n");
+    public void giveExperience() {
+        System.out.println("Eleven Fifty Academy\n" +
+                "-August 2016 - December 2016-\n" +
+                "* Completed Eleven Fifty Academy Bootcamp\n" +
+                "* Acquired Golden Badge for Web Proficiency\n" +
+                "* Acquired Red Badge for Mobile Proficiency\n\n" +
+                "Interapt\n" +
+                "-January 2017 - April 2017-\n" +
+                "* Completed Four Month Internship\n" +
+                "* Acquired Android Skill-Set\n" +
+                "* Worked on Multiple Production Applications\n\n");
         promptForNextMove();
-
     }
 
     @Override
@@ -42,14 +51,14 @@ public class Education implements EducationView{
     }
 
     @Override
-    public void quitApp() {
-        System.out.println("Thank you for stopping by!");
+    public void leaveApplication() {
+        System.out.println("Thanks for stopping by!");
         System.exit(0);
     }
 
     @Override
     public void startOver() {
-        System.out.println("Invalid response! Please try again!\n");
+        System.out.println("Invalid response! Please try again!");
         promptForNextMove();
     }
 

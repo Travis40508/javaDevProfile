@@ -9,4 +9,10 @@ public interface AboutView {
     void launchEducation();
 
     void startOver();
+
+    void launchExperience();
+
+    void launchSkills();
+
+    void launchFacts();
 }

@@ -5,4 +5,12 @@ package com.company.About.Education;
  */
 public interface EducationView {
     void greetUser();
+
+    void returnToAbout();
+
+    void returnToMain();
+
+    void quitApp();
+
+    void startOver();
 }

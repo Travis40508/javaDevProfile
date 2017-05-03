@@ -1,14 +1,15 @@
-package com.company.About.Education;
+package com.company.About.Experience;
 
 import com.company.Tools.BasePresenter;
 
 /**
  * Created by rodneytressler on 5/2/17.
  */
-public class EducationPresenter extends BasePresenter<EducationView> {
+public class ExperiencePresenter extends BasePresenter<ExperienceView> {
+
 
     public void classInstantiated() {
-        getView().greetUser();
+        getView().giveExperience();
     }
 
     public void aboutSelected() {
@@ -20,7 +21,7 @@ public class EducationPresenter extends BasePresenter<EducationView> {
     }
 
     public void quitAppSelected() {
-        getView().quitApp();
+        getView().leaveApplication();
     }
 
     public void invalidResponse() {

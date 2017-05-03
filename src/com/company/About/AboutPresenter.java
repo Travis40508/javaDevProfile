@@ -18,4 +18,16 @@ public class AboutPresenter extends BasePresenter<AboutView> {
     public void invalidStatementSelected() {
         getView().startOver();
     }
+
+    public void experienceSelected() {
+        getView().launchExperience();
+    }
+
+    public void skillsSelected() {
+        getView().launchSkills();
+    }
+
+    public void factsSelected() {
+        getView().launchFacts();
+    }
 }
